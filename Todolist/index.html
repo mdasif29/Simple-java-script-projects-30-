@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <!-- Heading with an image -->
+        <h2>
+          To-Do List
+          <img src="https://cdn-icons-png.flaticon.com/512/2387/2387635.png" />
+        </h2>
+
+        <!-- Input row for adding tasks -->
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your text" />
+          <button onClick="addTask()">Add</button>
+        </div>
+
+        <!-- Unordered list to display tasks -->
+        <ul id="list-container">
+          <!-- Tasks will dynamically appear here -->
+        </ul>
+      </div>
+    </div>
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

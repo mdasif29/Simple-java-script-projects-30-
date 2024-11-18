@@ -1,0 +1,126 @@
+/* Reset and general styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Outer container with a background image */
+.container {
+  min-height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/38/9d/3b/389d3bf350d09860a6fd4ad41f339566.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+/* Main To-Do App styles */
+.todo-app {
+  max-width: 450px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: rgba(156, 11, 11, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(7px); /* Blurred effect */
+}
+
+/* Header style */
+.todo-app h2 {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+  width: 80px;
+  margin-left: 10px;
+}
+
+/* Input and button container */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 30px;
+  padding: 0px 20px;
+  margin-bottom: 15px;
+  border: solid black 2px;
+}
+
+/* Input box styles */
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+}
+
+/* Add button styles */
+button {
+  font-family: "Oswald", sans-serif;
+  padding: 13px 80px;
+  margin-left: 47px;
+  background: rgb(255, 132, 0);
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 35px;
+  border: solid rgb(255, 225, 0) 5px;
+}
+
+/* Task list styles */
+ul li {
+  list-style: none;
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Circle checkbox before each task */
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(https://flyclipart.com/thumb2/checkbox-unchecked-icon-616494.png);
+  background-size: cover;
+  background-position: center;
+  top: 7px;
+  left: 8px;
+}
+
+/* Styling for completed tasks */
+ul li.checked {
+  color: #ffea00;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(https://cdn.icon-icons.com/icons2/2645/PNG/512/check_square_icon_160269.png);
+}
+
+/* Close button (x) styles */
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #f5b9b9;
+  line-height: 40px;
+  text-align: center;
+}
+
+ul li span:hover {
+  background: #f2ff00;
+  color: black;
+  border-radius: 40%;
+}
